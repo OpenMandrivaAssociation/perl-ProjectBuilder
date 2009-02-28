@@ -9,7 +9,7 @@ Summary(fr):	Module Perl pour le support de diverses distributions Linux
 
 Name:		perl-ProjectBuilder
 Version:	0.9.6
-Release:	1.mdv2009.0
+Release:	%mkrel 1
 License:	GPL
 Group:		System/Configuration/Packaging
 Url:		http://trac.project-builder.org
