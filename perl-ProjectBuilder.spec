@@ -8,7 +8,7 @@ Summary:	Perl module providing support and deal with Linux distributions
 Summary(fr):	Module Perl pour le support de diverses distributions Linux
 
 Name:		perl-ProjectBuilder
-Version:	0.9.7
+Version:	0.9.7.1
 Release:	%mkrel 1
 License:	GPL
 Group:		System/Configuration/Packaging
