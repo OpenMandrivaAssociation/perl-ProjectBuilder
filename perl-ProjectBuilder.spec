@@ -2,13 +2,13 @@
 # $Id$
 #
 %define perlvendorlib %(eval "`%{__perl} -V:installvendorlib`"; echo $installvendorlib)
-%define srcname	ProjectBuilder
+%define srcname ProjectBuilder
 
-Summary:	Perl module providing support and deal with Linux distributions
-Summary(fr):	Module Perl pour le support de diverses distributions Linux
+Summary:	Perl module providing multi-OSes (Linux/Solaris/...) Continuous Packaging
+Summary(fr):	Module Perl pour le support de divers OS (Linux/Solaris/...)
 
 Name:		perl-ProjectBuilder
-Version:	0.9.7.1
+Version:	0.9.10
 Release:	%mkrel 1
 License:	GPL
 Group:		System/Configuration/Packaging
@@ -16,11 +16,13 @@ Url:		http://trac.project-builder.org
 Source:		ftp://ftp.project-builder.org/src/%{srcname}-%{version}.tar.gz
 BuildRoot:	%{_tmppath}/%{srcname}-%{version}-%{release}-root-%(id -u -n)
 BuildArch:	noarch
-Requires:	perl >= 5.8.4,  
+Requires:	perl >= 5.8.4, 
 
 %description
-perl-ProjectBuilder is a perl module providing set of functions
-to help develop perl projects and deal with Linux distributions.
+ProjectBuilder is a perl module providing set of functions
+to help develop packages for projects and deal
+with different Operating systems (Linux distributions, Solaris, ...).
+It implements a Continuous Packaging approach.
 
 %description -l fr
 perl-ProjectBuilder est un ensemble de fonctions pour aider à développer des projets perl 
@@ -30,7 +32,7 @@ et à traiter de diverses distributions Linux.
 %setup -q -n %{srcname}-%{version}
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS=vendor destdir=${RPM_BUILD_ROOT}/ 
+%{__perl} Makefile.PL INSTALLDIRS=vendor destdir=${RPM_BUILD_ROOT}/  CONFDIR=%{_sysconfdir}/pb MANDIR=%{_mandir}
 make
 
 %install
@@ -49,9 +51,10 @@ make test
 %defattr(-,root,root)
 %doc NEWS AUTHORS
 %doc INSTALL COPYING README
+%config(noreplace) %{_sysconfdir}/pb
 
 %{perlvendorlib}/*
 %{_bindir}/*
-#%{_mandir}/man1/*
+%{_mandir}/man1/*
 %{_mandir}/man3/*
-
+%{_mandir}/man5/*
