@@ -1,2 +1,4 @@
+removed_sources:
+  ProjectBuilder-0.11.3.tar.gz: b80bfeec096bbdf1504ee7c5cea53046bbc3d475
 sources:
-  "ProjectBuilder-0.11.3.tar.gz": b80bfeec096bbdf1504ee7c5cea53046bbc3d475
+  ProjectBuilder-0.12.2.tar.gz: cd90dd5dc58f91b5d61873545b5bb2e8fb89f833

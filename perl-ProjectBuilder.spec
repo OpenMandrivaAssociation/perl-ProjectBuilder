@@ -2,12 +2,12 @@
 
 Summary:	Provides multi-OSes (Linux/Solaris/...) Continuous Packaging
 Name:		perl-%{upstream_name}
-Version:	0.11.3
-Release:	2
+Version:	%perl_convert_version 0.12.2
+Release:	1
 License:	GPL
 Group:		System/Configuration/Packaging
 Url:		http://trac.project-builder.org
-Source:		ftp://ftp.project-builder.org/src/%{upstream_name}-%{version}.tar.gz
+Source:		ftp://ftp.project-builder.org:21/src/ProjectBuilder-%{version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildArch:	noarch
@@ -53,4 +53,5 @@ make test
 - Remove the useless changelog line of the spec file
 - Add perl-ProjectBuilder 0.9.9 to Mandriva
 - create perl-Project-Builder
+
 
