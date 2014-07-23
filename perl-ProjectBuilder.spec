@@ -2,12 +2,12 @@
 
 Summary:	Provides multi-OSes (Linux/Solaris/...) Continuous Packaging
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 0.12.5
+Version:	%perl_convert_version 0.12.6
 Release:	1
 License:	GPL
 Group:		System/Configuration/Packaging
 Url:		http://trac.project-builder.org
-Source:		ftp://ftp.project-builder.org:21/src/ProjectBuilder-%{version}.tar.gz
+Source:		ftp://ftp.project-builder.org:21/src/%{upstream_name}-%{version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildArch:	noarch
@@ -39,19 +39,3 @@ make test
 %{_mandir}/man1/*
 %{_mandir}/man3/*
 %{_mandir}/man5/*
-
-%changelog
-* Fri May 27 2011 Bruno Cornec <bcornec@mandriva.org> 0.11.3-1mdv2011.0
-+ Revision: 680266
-- Update to upstream 0.11.3 of perl-ProjectBuilder
-- Still do not understand the build error msg :-(
-- Removes french summary in addition (Bugs !!)
-- Removes french desc
-- Update to upstream ProjectBuilder 0.11.2
-- Force rebuild with newest version
-- Update to upstream 0.10.1
-- Remove the useless changelog line of the spec file
-- Add perl-ProjectBuilder 0.9.9 to Mandriva
-- create perl-Project-Builder
-
-
