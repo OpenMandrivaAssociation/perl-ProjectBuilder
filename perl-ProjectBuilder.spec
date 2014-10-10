@@ -3,7 +3,7 @@
 Summary:	Provides multi-OSes (Linux/Solaris/...) Continuous Packaging
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 0.12.6
-Release:	1
+Release:	2
 License:	GPL
 Group:		System/Configuration/Packaging
 Url:		http://trac.project-builder.org
