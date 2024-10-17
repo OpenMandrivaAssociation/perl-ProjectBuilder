@@ -6,7 +6,7 @@ Version:	%perl_convert_version 0.12.6
 Release:	3
 License:	GPL
 Group:		System/Configuration/Packaging
-Url:		http://trac.project-builder.org
+Url:		https://trac.project-builder.org
 Source:		ftp://ftp.project-builder.org:21/src/%{upstream_name}-%{version}.tar.gz
 
 BuildRequires:	perl-devel
