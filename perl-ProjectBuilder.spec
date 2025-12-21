@@ -9,6 +9,7 @@ Group:		System/Configuration/Packaging
 Url:		https://trac.project-builder.org
 Source:		ftp://ftp.project-builder.org:21/src/%{upstream_name}-%{version}.tar.gz
 
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildArch:	noarch
 
