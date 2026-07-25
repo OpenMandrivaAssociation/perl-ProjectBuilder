@@ -2,12 +2,12 @@
 
 Summary:	Provides multi-OSes (Linux/Solaris/...) Continuous Packaging
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 0.12.6
-Release:	3
+Version:	v0.14.1
+Release:	1
 License:	GPL
 Group:		System/Configuration/Packaging
 Url:		https://trac.project-builder.org
-Source:		ftp://ftp.project-builder.org:21/src/%{upstream_name}-%{version}.tar.gz
+Source:		https://cpan.metacpan.org/authors/id/B/BC/BCO/ProjectBuilder-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
